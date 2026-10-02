@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipalidad El Monte</title>
+    <!-- Fuentes de Google Fonts: Lora (Títulos patrimoniales) y Montserrat (UI moderna) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos única -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado y Navegación -->
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- Logo oficial a la izquierda -->
+            <div class="logo">
+                <a href="#">
+                    <img src="logos/munielmonte.png" alt="Logo Municipalidad El Monte - Donde nace la patria" class="main-logo">
+                </a>
+            </div>
+            
+            <!-- Menú y botón agrupados a la derecha -->
+            <div class="header-right">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="active">Inicio</a></li>
+                        <li><a href="#">Trámites</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">La comuna</a></li>
+                        <li><a href="#">Participa</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn btn-primary">Trámites y servicios</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Hero (Carrusel) -->
+        <section class="hero-carousel">
+            <div class="carousel-container">
+                <!-- Slides -->
+                <div class="carousel-track">
+                    
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide slide-navy current-slide">
+                        <div class="hero-content">
+                            <span class="badge-red">INFORMACIÓN PARA LA COMUNIDAD</span>
+                            <h2>Bienvenidas y bienvenidos al portal municipal</h2>
+                            <p>Encuentra orientación, actividades, servicios y contenidos municipales de ejemplo en un solo lugar.</p>
+                            <form class="hero-search" aria-label="Búsqueda principal">
+                                <input type="text" placeholder="Busca un trámite, servicio o tema" required>
+                                <button type="submit" class="btn btn-accent">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide slide-navy-dark">
+                        <div class="hero-content">
+                            <span class="badge-red">AGENDA COMUNAL</span>
+                            <h2>Conoce actividades para participar</h2>
+                            <p>Revisa las actividades y encuentros de ejemplo preparados para la comunidad.</p>
+                            <a href="#" class="btn btn-accent">Ver agenda</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide slide-navy">
+                        <div class="hero-content">
+                            <span class="badge-red">ATENCIÓN CIUDADANA</span>
+                            <h2>Orientación para tus trámites</h2>
+                            <p>Consulta categorías, requisitos referenciales y rutas de atención municipal.</p>
+                            <a href="#" class="btn btn-accent">Explorar trámites</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-slide slide-navy-dark">
+                        <div class="hero-content">
+                            <span class="badge-red">INFORMACIÓN ÚTIL</span>
+                            <h2>Emergencias y contactos</h2>
+                            <p>Encuentra orientación general y reemplaza estos datos por canales oficiales verificados.</p>
+                            <a href="#" class="btn btn-accent">Ver orientación</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Botones Laterales -->
+                <button class="carousel-button carousel-button-left" aria-label="Slide anterior">
+                    &lt;
+                </button>
+                <button class="carousel-button carousel-button-right" aria-label="Slide siguiente">
+                    &gt;
+                </button>
+
+                <!-- Indicadores Inferiores -->
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current-indicator" aria-label="Ir al slide 1"></button>
+                    <button class="carousel-indicator" aria-label="Ir al slide 2"></button>
+                    <button class="carousel-indicator" aria-label="Ir al slide 3"></button>
+                    <button class="carousel-indicator" aria-label="Ir al slide 4"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Trámites -->
+        <section class="section-light">
+            <div class="container">
+                <span class="section-kicker">ATENCIÓN CIUDADANA</span>
+                <h3 class="section-title">Trámites y servicios municipales</h3>
+                <p class="section-desc">Busca por nombre o filtra por categoría para identificar la orientación que necesitas.</p>
+                
+                <div class="filter-bar">
+                    <div class="search-input">
+                        <label for="tramite-search">Buscar servicios</label>
+                        <input type="text" id="tramite-search" placeholder="Ejemplo: certificado, permiso o apoyo">
+                    </div>
+                    <div class="filter-select">
+                        <label for="categoria">Filtrar por categoría</label>
+                        <select id="categoria">
+                            <option>Todas las categorías</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid-3">
+                    <article class="card">
+                        <span class="card-kicker">DOCUMENTOS</span>
+                        <h4>Certificado de residencia</h4>
+                        <p>Orientación referencial para solicitar un certificado de residencia.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-kicker">APOYOS</span>
+                        <h4>Orientación de apoyo comunitario</h4>
+                        <p>Información general de ejemplo sobre programas y derivaciones.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-kicker">PERMISOS</span>
+                        <h4>Permiso para actividad local</h4>
+                        <p>Guía inicial de ejemplo para actividades en espacios locales.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Accesos Rápidos -->
+        <section class="section-light">
+            <div class="container">
+                <div class="section-header-flex">
+                    <div>
+                        <span class="section-kicker">ACCESOS RÁPIDOS</span>
+                        <h3 class="section-title">Lo que necesitas hoy</h3>
+                    </div>
+                    <a href="#" class="link-blue">Ver todos los servicios</a>
+                </div>
+                
+                <div class="grid-4">
+                    <article class="card card-icon">
+                        <div class="icon">📄</div>
+                        <h4>Certificados y documentos</h4>
+                        <p>Accede a orientación de ejemplo para gestiones documentales.</p>
+                    </article>
+                    <article class="card card-icon">
+                        <div class="icon">🤝</div>
+                        <h4>Apoyos comunitarios</h4>
+                        <p>Revisa programas, acompañamiento y derivaciones referenciales.</p>
+                    </article>
+                    <article class="card card-icon">
+                        <div class="icon">📅</div>
+                        <h4>Agenda de actividades</h4>
+                        <p>Conoce encuentros, talleres y convocatorias de ejemplo.</p>
+                    </article>
+                    <article class="card card-icon">
+                        <div class="icon">🛡️</div>
+                        <h4>Ayuda y emergencias</h4>
+                        <p>Ubica recomendaciones y contactos referenciales útiles.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes (Acordeón) -->
+        <section class="section-light">
+            <div class="container accordion-container">
+                <span class="section-kicker">AYUDA</span>
+                <h3 class="section-title">Preguntas frecuentes</h3>
+                <p class="section-desc">Respuestas de ejemplo editables para orientar la navegación y atención municipal.</p>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            ¿Cómo encuentro un trámite? <span class="icon-plus">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Puedes utilizar el buscador principal o navegar por la sección de trámites y servicios.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            ¿Dónde reviso actividades comunales? <span class="icon-plus">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>La agenda de actividades se actualiza semanalmente en la sección Participa.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            ¿Cómo envío una consulta? <span class="icon-plus">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Al final de esta página encontrarás un formulario de contacto directo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Emergencias y contactos útiles -->
+        <section class="section-warm">
+            <div class="container">
+                <span class="section-kicker-red">INFORMACIÓN IMPORTANTE</span>
+                <h3 class="section-title text-primary-dark">Emergencias y contactos útiles</h3>
+                <p class="section-desc text-muted-dark">Los datos de esta sección son referenciales. Reemplázalos por canales oficiales verificados antes de publicar.</p>
+                
+                <div class="grid-3">
+                    <article class="card border-accent">
+                        <div class="icon-accent">🛡</div>
+                        <h4 class="text-primary-dark">Seguridad comunitaria</h4>
+                        <p>Canal de contacto de ejemplo para situaciones de seguridad local.</p>
+                    </article>
+                    <article class="card border-accent">
+                        <div class="icon-accent">💙</div>
+                        <h4 class="text-primary-dark">Salud y urgencias</h4>
+                        <p>Canal de contacto de ejemplo para orientación ante urgencias de salud.</p>
+                    </article>
+                    <article class="card border-accent">
+                        <div class="icon-accent">💧</div>
+                        <h4 class="text-primary-dark">Prevención de riesgos</h4>
+                        <p>Información editable para alertas, prevención y preparación comunitaria.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Formulario de Contacto -->
+        <section class="section-dark">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <span class="section-kicker-accent">CANALES DE ATENCIÓN</span>
+                    <h3 class="section-title text-white">¿Necesitas orientación?</h3>
+                    <p class="text-white-opacity">Utiliza los canales de ejemplo o envía una consulta. Reemplaza estos contenidos por información oficial antes de publicar.</p>
+                    
+                    <ul class="contact-details text-white-opacity">
+                        <li><strong>Dirección:</strong> Dirección de ejemplo editable, comuna o ciudad</li>
+                        <li><strong>Horario de atención:</strong> Horario de ejemplo editable</li>
+                        <li><strong>Canal de contacto:</strong> Teléfono o correo de ejemplo editable</li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h4 class="form-title text-primary-dark">Envía tu consulta</h4>
+                    <p class="form-desc text-muted">Completa el formulario y tu mensaje será registrado para su seguimiento.</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono opcional</label>
+                            <input type="tel" id="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar consulta</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h5>Municipalidad de El Monte</h5>
+                <p>Donde nace la patria.</p>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Volver al inicio</a></li>
+                    <li><a href="#">Transparencia</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
